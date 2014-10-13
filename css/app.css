@@ -1,0 +1,59 @@
+body {
+  background: white;
+  color: #222222;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 150%;
+  position: relative;
+  cursor: default; }
+
+  #header-buttons {
+    float: right;
+    /* Fix for MS Surface issues */
+    -ms-touch-action: none;
+    touch-action: none;
+}
+#header-buttons .btn {
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*button styling starts*/
+.btn {
+  display: inline-block;
+  padding: 9px 15px 10px;
+  margin-bottom: 0;
+  background: #009cde;
+  font-size: 15px;
+  font-size: 1.07142857142857rem;
+  font-weight: bold;
+  line-height: 1.4545em;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 5px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.btn:hover {
+  color: #fff;
+  text-decoration: none;
+  background: #0285d2;
+}
+.btn:focus {
+  color: #FFF;
+}
+.btn.active,
+.btn:active {
+  background-image: none;
+  outline: 0;
+  -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+}
