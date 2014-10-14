@@ -22,7 +22,7 @@
               <ul>
                 <li><a href="file:///C:/Users/split/Documents/GitHub/ShableStatic/planifier.html">Planifier</a></li>
                 <li><a href="#1">Rejoindre</a></li>
-                <li><a href="#1">Profil</a></li>
+                <li><a href="file:///C:/Users/split/Documents/GitHub/ShableStatic/profil.html">Profil</a></li>
               </ul>
             </nav>
           </div>
@@ -120,15 +120,107 @@
     <div class="row container">
       <div class="large-12 columns">
         <div class="row border-bottom">
-          <div class="large-8 columns centered">
+          <div class="large-8 columns large-centered text-center">
             <h1>Publiez votre activité</h1>
             <h2>Shable vous permet de partager vos activités avec vos amis et de rencontrer de nouvelles personnes</h2>
           </div>
         </div>
-        <div class="row border-bottom">
-          <div class="large-12 columns">
-            <p><span class="icon-drink2"></span></p>
-            <p>Soirée</p>
+        <div class="row border-bottom margin-top">
+          <div class="large-9 columns large-centered">
+            <form>
+              <div class="row first">
+                <div class="large-3 columns">
+                  <h4>Type d'activité</h4>
+                </div>
+                <div class="large-9 columns">
+                  <fieldset>
+                  <div class="button-grouped">
+                    <button class="button" data-name="Sport" data-slug="Sport">
+                      <p><span class="icon-soccer"></span>Sport</p>
+                    </button>
+                    <button class="button" data-name="Table" data-slug="Table">
+                      <p><span class="icon-restaurant2"></span>A table</p>
+                    </button>
+                    <button class="button" data-name="Festif" data-slug="Festif">
+                      <p><span class="icon-drink2"></span>Festif</p>
+                    </button>
+                    <button class="button" data-name="Culture" data-slug="Culture">
+                      <p><span class="icon-camera"></span>Culture</p>
+                    </button>
+                  </div>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-3 columns">
+                  <h4><span>Choisissez l'activité</span></h4>
+                </div>
+                <div class="large-9 columns">
+                  <select class="" name="activity">
+                    <option value="Tennis">Tennis</option>
+                    <option value="Natation">Natation</option>
+                    <option value="Jogging">Jogging</option>
+                    <option value="Foot">Foot</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-3 columns">
+                  <h4><span>Visibilité</span></h4>
+                </div>
+                <div class="large-9 columns">
+                  <select class="" name="visibility">
+                    <option value="Amis">Amis</option>
+                    <option value="Privé">Privé</option>
+                    <option value="Public">Public</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-3 columns">
+                  <h4><span>Nom de l'activité</span></h4>
+                </div>
+                <div class="large-9 columns">
+                  <input type="text" placeholder="Nom" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-3 columns">
+                  <h4><span>Date</span></h4>
+                </div>
+                <div class="large-9 columns">
+                  <input type="text" placeholder="Date" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-3 columns">
+                  <h4><span>Créneau</span></h4>
+                </div>
+                <div class="large-9 columns">
+                  <select class="" name="period">
+                    <option value="Morning">Matiné</option>
+                    <option value="Lunch">Midi</option>
+                    <option value="Afternoon">Après-midi</option>
+                    <option value="Apero">Apéro</option>
+                    <option value="Dining">Dîné</option>
+                    <option value="Evening">Soirée</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-3 columns">
+                  <h4><span>Lieu</span></h4>
+                </div>
+                <div class="large-9 columns">
+                  <input type="text" placeholder="Lieu" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-12 columns text-center">
+                  <a href="#AjoutActivité" id="add-activity-button" name="AddActivity_button" class="btn btn-small">Publier</a>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>

@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?1cmodj');
-	src:url('fonts/icomoon.eot?#iefix1cmodj') format('embedded-opentype'),
-		url('fonts/icomoon.woff?1cmodj') format('woff'),
-		url('fonts/icomoon.ttf?1cmodj') format('truetype'),
-		url('fonts/icomoon.svg?1cmodj#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?yqgas');
+	src:url('fonts/icomoon.eot?#iefixyqgas') format('embedded-opentype'),
+		url('fonts/icomoon.woff?yqgas') format('woff'),
+		url('fonts/icomoon.ttf?yqgas') format('truetype'),
+		url('fonts/icomoon.svg?yqgas#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,8 +23,23 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-calendar:before {
+	content: "\e618";
+}
+.icon-phone:before {
+	content: "\e619";
+}
+.icon-tablet:before {
+	content: "\e61a";
+}
+.icon-monitor:before {
+	content: "\e61b";
+}
 .icon-camera:before {
 	content: "\e600";
+}
+.icon-film:before {
+	content: "\e61c";
 }
 .icon-drink:before {
 	content: "\e601";
@@ -33,12 +48,21 @@
 	content: "\e602";
 }
 .icon-checkmark:before {
+	content: "\e61d";
+}
+.icon-checkmark2:before {
 	content: "\e603";
 }
 .icon-plus:before {
+	content: "\e61e";
+}
+.icon-plus2:before {
 	content: "\e604";
 }
 .icon-minus:before {
+	content: "\e61f";
+}
+.icon-minus2:before {
 	content: "\e605";
 }
 .icon-time:before {
@@ -50,6 +74,15 @@
 .icon-gamepad:before {
 	content: "\e608";
 }
+.icon-football:before {
+	content: "\e620";
+}
+.icon-bowling:before {
+	content: "\e621";
+}
+.icon-baseball:before {
+	content: "\e622";
+}
 .icon-soccer:before {
 	content: "\e609";
 }
@@ -58,6 +91,15 @@
 }
 .icon-unlocked:before {
 	content: "\e60b";
+}
+.icon-list:before {
+	content: "\e623";
+}
+.icon-list2:before {
+	content: "\e624";
+}
+.icon-tools:before {
+	content: "\e625";
 }
 .icon-brush:before {
 	content: "\e60c";
@@ -71,20 +113,32 @@
 .icon-info:before {
 	content: "\e60f";
 }
+.icon-compass:before {
+	content: "\e626";
+}
 .icon-heart2:before {
 	content: "\e610";
 }
 .icon-heart3:before {
 	content: "\e611";
 }
+.icon-power-off:before {
+	content: "\f011";
+}
 .icon-group:before {
 	content: "\f0c0";
+}
+.icon-cutlery:before {
+	content: "\f0f5";
 }
 .icon-thumbs-up:before {
 	content: "\f164";
 }
 .icon-thumbs-down:before {
 	content: "\f165";
+}
+.icon-restaurant2:before {
+	content: "\e617";
 }
 .icon-googleplus:before {
 	content: "\e612";
