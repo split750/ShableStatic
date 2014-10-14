@@ -23,19 +23,16 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-.centered {
-  text-align: center;
-}
+.centered { text-align: center; }
 
-.border-bottom {
-  border-bottom: 1px solid #d5d6d8;
-}
+.border-bottom { border-bottom: 1px solid #d5d6d8; }
+.border-left { border-left: 1px solid #d5d6d8; }
 
-a {
-  color: #2b2d2e;
-}
+.margin-top { margin-top: 20px !important; }
+.padding-bottom { padding-bottom: 20px !important; }
 
 section.margin { margin-top: 20px; }
+section.light-grey { background-color: #f2f2f2; }
 
 h1 {
   font-weight: bold;
@@ -46,6 +43,22 @@ h1 {
 
 h2 {
   color: #555;
+}
+
+h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #4f4f4f;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+a {
+  color: #2b2d2e;
 }
 
 .inline-menu {
@@ -316,6 +329,8 @@ header {
   text-align: center;
 }
 
+.button-facebook .icon-facebook { color: #fff; }
+
 .button-facebook:hover, .button-facebook:focus {
   border-color: #4568b2;
   border-bottom-color: #2d4575;
@@ -406,7 +421,6 @@ header {
   margin: 0 0 4px 0;
   font-size: 14px;
   line-height: 20px;
-  /*vertical-align: top;*/
 }
 
 .vignette span {
@@ -465,26 +479,152 @@ footer h5 { padding: 16px 0; font-size: 14px; color: #d3d3d3; }
 }
 
 .footer-icon-container:hover, .footer-icon-container:active { color: #777; }
-
+.footer-icon-container .footer-icon { color: #fff; }
+.footer-icon-container .footer-icon:hover, .footer-icon-container .footer-icon:active { color: #777; }
 .footer-icon:before { vertical-align: middle; }
 
 /* Page event */
 
 .event {
-  padding-top: 30px;
+  padding: 30px 0;
 }
 
-.event.sport { background-color: #5dc8fd; }
-.event.festif { background-color: #ffc125; }
-.event.culture { background-color: #82c7ae; }
-.event.gastro { background-color: #f87349; }
+.container {
+  -o-box-shadow: 0 0 15px rgba(0,0,0,0.13);
+  -moz-box-shadow: 0 0 15px rgba(0,0,0,0.13);
+  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.13);
+  box-shadow: 0 0 15px rgba(0,0,0,0.13);
+  background-color: #fff;
+}
+.container .no-padding {  padding: 0; }
 
-.event h1 {
+.event .head { 
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0 10px 0;
+}
+
+.event.sport .head { background-color: #5dc8fd; }
+.event.festif .head { background-color: #ffc125; }
+.event.culture .head { background-color: #82c7ae; }
+.event.gastro .head { background-color: #f87349; }
+
+.event .head h1, .event .head h2 { color: #FFF; }
+.event .head h1 {
+  position: relative;
   font-size: 36px;
+}
+.event h1:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 30%;
+  bottom: -4px;
+  left: 0;
+  background-color: #555;
 }
 
 .event h2 {
-  font-size: 24px;
+  padding-top: 6px;
+  font-size: 18px;
+  font-style: italic;
+}
+.event h2 span { font-style: normal; }
+
+.event .head .statut {
+  display: inline-block;
+  background-color: #eee;
+  padding: 0 14px 2px 12px;
+  border-radius: 6px;
+  color: #2b2d2e;
+  margin: 4px 0 8px 0;
 }
 
-.event .profil-pic { margin-top: 10px; }
+.event .head .statut:hover, .event .head .statut:focus {
+  padding: 0 18px 2px 16px;
+}
+
+.event .head .statut span { padding-right: 4px; }
+
+.event .profil-pic { 
+  margin: 15px auto 20px; 
+}
+
+.event-param {
+  padding: 14px 0 10px 0;
+  background-color: #fff;
+}
+
+.event-param p {
+  margin: 0;
+  color: #2b2d2e;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.event-param [class^="icon-"], .event-param [class*=" icon-"] {
+  font-size: 32px;
+}
+
+.event .participants .icon-group {
+  font-size: 32px;
+  margin-left: -20px;
+}
+.event .participants .profil-pic {
+  width: 60px;
+  height: 60px;
+  margin: 0 6px;
+}
+
+.event .participants ul {
+  margin-top: 16px;
+}
+
+.event .location h4 {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+.event .location .icon-location {
+  font-size: 20px;
+  margin-right: 4px;
+}
+.event .location p { padding-left: 20px; }
+
+/* Like box */
+
+.like {
+  display: inline-block;
+  padding: 4px 40px;
+  margin: 20px 0 0 0;
+  background-color: #f2f2f2;
+  border: 1px solid #FF2A55;
+  text-align: center;
+}
+
+.like [class^="icon-"], .like [class*=" icon-"] {
+  font-size: 32px;
+  color: #FF2A55;
+}
+
+.like p { margin-bottom: 0; }
+
+
+/* Social share */
+
+.social-share { margin-top: 14px; }
+.social-share p { margin-bottom: 0; display: inline; }
+.social-share ul { display: inline; }
+.social-share li a { margin: 0 4px; font-size: 20px; }
+
+.icon-facebook { color: #3b5998; }
+.icon-googleplus { color: #d34836; }
+.icon-twitter { color: #0084b4; }
+
+/* address */
+
+.address { list-style-type: none; }
+.address li { font-size: 14px; }
+
+
+/* Page planifier */
+
